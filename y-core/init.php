@@ -13,4 +13,6 @@
 require_once( __DIR__ . '/connection/connect.php' );
 # Acces the y_tables class
 require_once( __DIR__ . '/y-tables/y-create-tables.php' );
+# Acces the y-insert class
+require_once( __DIR__ . '/y-insert/y-insert-into-tables.php' );
 ?>

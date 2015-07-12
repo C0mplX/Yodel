@@ -1,5 +1,5 @@
 <?php
-//Get the constants variables
+//Get the connection class
 require_once( __DIR__ . "/../connection/connect.php" );
 /**
 * 
@@ -13,6 +13,13 @@ require_once( __DIR__ . "/../connection/connect.php" );
 */
 class y_tables extends connect_database {
 
+
+	/**
+	*
+	* This method creates a table 
+	* @param $table_name, $query
+	*
+	*/
 	public function create_table( $table_name, $query ) {
 
 		try {

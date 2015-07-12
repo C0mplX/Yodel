@@ -9,6 +9,8 @@
 * 
 */
 
-// Connection to the database
-require_once( 'connection/connect.php' );
+# Connection to the database
+require_once( __DIR__ . '/connection/connect.php' );
+# Acces the y_tables class
+require_once( __DIR__ . '/y-tables/y-create-tables.php' );
 ?>

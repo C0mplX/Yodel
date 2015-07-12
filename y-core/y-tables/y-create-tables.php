@@ -1,6 +1,6 @@
 <?php
 //Get the constants variables
-require_once( '../constants/constants.php' );
+require_once( __DIR__ . "/../connection/connect.php" );
 /**
 * 
 * Class name:  tables
@@ -11,16 +11,15 @@ require_once( '../constants/constants.php' );
 * @version 1.0
 * 
 */
-
-class tables {
+class y_tables extends connect_database {
 
 	public function create_table( $table_name, $query ) {
 
 		try {
-			$sql = "CREATE TABLE IF NOT EXISTS $table_name( $query );";
 
-			DB->exec( $sql );
-			return true;	
+			$y_sql = "CREATE TABLE IF NOT EXISTS $table_name( $query );";
+
+			$this->db()->exec( $y_sql );
 
 		} catch (PDOexception $e) {
 			die( $e->getMessage() );

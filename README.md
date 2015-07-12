@@ -1,2 +1,0 @@
-# Yodel
-PHP framework

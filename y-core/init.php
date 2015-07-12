@@ -6,7 +6,9 @@
 * all of the Yodels framework functions. 
 * @author Ole Martin Skaug @ Yodel
 * @version 1.0 - strawberry
-*
+* 
 */
 
+// Connection to the database
+require_once( 'connection/connect.php' );
 ?>

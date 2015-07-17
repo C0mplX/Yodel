@@ -44,7 +44,7 @@ function removeMagicQuotes() {
 
 /**
 *
-* Check for regiter globals and reomve them if they exists
+* Check for register globals and reomve them if they exists
 *
 */
 function unregisterGlobal() {
@@ -128,7 +128,7 @@ function __autoload( $className ) {
     } else if ( file_exists ( ROOT . DS . 'application' . DS . 'models' . DS . strtolower( $className ) . '.php' ) ) {
         require_once( ROOT . DS . 'application' . DS . 'models' . DS . strtolower( $className ) . '.php' );
     } else {
-        header( ROOT . '404.php' );
+
     }
 }
 setReporting();

@@ -37,12 +37,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index"><b><?php echo SITENAME ?></b></a>
+          <a class="navbar-brand" href="<?php echo SITEURL ?>"><b><?php echo SITENAME ?></b></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="about  ">About</a></li>
-            <li><a href="documentation">Documentation</a></li>
+            <li><a href="<?php echo SITEURL ?>about ">About</a></li>
+            <li><a href="<?php echo SITEURL ?>documentation">Documentation</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

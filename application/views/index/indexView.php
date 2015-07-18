@@ -6,6 +6,7 @@ require_once( 'application/views/headerView.php' )
 			<div class="row">
 				<div class="col-lg-6">
 					<h1>Yodel a MVC framwork for developers</h1>
+					<button div class="btn btn-warning btn-lg">Get Yodel Now</button>
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
 					<img class="img-responsive" src="public/img/ipad-hand.png" alt="">

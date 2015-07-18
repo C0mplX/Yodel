@@ -14,13 +14,17 @@ require_once( 'application/views/headerView.php' );
 		<div class="col-md-3 col-xs-12 side-menu">
 			<h2>Overview</h2>
 			<ul>
-				<a href="started"><li>Getting started</li></a>
-				<a href="controllers"><li>Add new controllers</li></a>
-				<a href="views"><li>Add new Views</li></a>
+				<a href="<?php echo SITEURL; ?>documentation/started"><li>Getting started</li></a>
+				<a href="<?php echo SITEURL; ?>documentation/controllers"><li>Add new controllers</li></a>
+				<a href="<?php echo SITEURL; ?>docmentation/views"><li>Add new Views</li></a>
 			</ul>
 		</div>
 		<div class="col-md-9 col-xs-12 side-view">
 			<h2>Getting started</h2>
+			<?php echo $data->text; ?>
+			<?php
+			var_dump($data->array2);
+			?>
 		</div>
 	</div><!-- /row -->
 </div><!-- /container -->

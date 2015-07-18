@@ -22,7 +22,9 @@ class MainView	{
 		$cleanArray = array();
 
 		foreach ($data as $key => $value) {
+
 			$cleanArray[strtolower($key)] = htmlspecialchars( $value );
+
 		}
 		return (object)$cleanArray;
 	}

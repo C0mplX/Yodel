@@ -7,13 +7,18 @@ class documentationController extends MainView 	{
 	
 	public function index() {
 
-		$this->View( 'documentation', 'documentation', array( 'text' => 'text' ) );
+		$dataArray = array( 
+			'text' => 'text',
+			'array2'=> array( 'Hello', 'Hello' )
+		);
+
+		$this->View( 'documentation', 'documentation', $dataArray );
 
 	}
 
 	public function started() {
 
-		$this->View( 'documentation', 'documentation', array( 'text' => 'text' ) );
+		$this->View( 'documentation', 'about', array( 'text' => 'text' ) );
 
 	}
 }
